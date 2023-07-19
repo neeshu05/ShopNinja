@@ -1,7 +1,5 @@
-import { API } from "../../backend";
-
 export const getProducts = () => {
-  return fetch(`${API}product`, { method: "GET" })
+  return fetch('http://127.0.0.1:8000/product')
     .then((response) => {
       return response.json();
     })
