@@ -1,6 +1,5 @@
-import { API } from "../../backend";
 import { cartEmpty } from "../../core/helper/cartHelper";
-
+const API = 'http://127.0.0.1:8000/'
 export const signup = (user) => {
   return fetch(`${API}user/`, {
     method: "POST",
